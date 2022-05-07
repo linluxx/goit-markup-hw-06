@@ -457,6 +457,7 @@ img {
 }
 .footer-contact-container {
   margin-right: 70px;
+  flex-grow: 1;
 }
 
 .footer-logo {
@@ -741,8 +742,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
 }
 
 .is-hidden {
@@ -778,11 +778,10 @@ img {
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
-  letter-spacing: 1.15;
+  letter-spacing: 0.03em;
   color: var(--title);
-  margin-top: 40px;
   margin-bottom: 12px;
 }
 
@@ -821,6 +820,7 @@ img {
 
 .modal-textarea {
   margin-bottom: 20px;
+  display: block;
 }
 
 .modal-label {
@@ -865,6 +865,7 @@ img {
   color: var(--main-text);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .check-label span {
@@ -900,12 +901,9 @@ img {
   border-color: transparent;
   color: var(--active-btn-text);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-send-btn-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-send-btn:hover,
